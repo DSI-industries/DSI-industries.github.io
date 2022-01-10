@@ -18,6 +18,7 @@
 body{
 	height: 100vh;
 	background: #000000;
+	font-size: 18px;
 }
 
 header{
@@ -79,6 +80,7 @@ header{
 	position: absolute;
 	top: 60px;
 	width: 150px;
+	height: 100%;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -120,12 +122,15 @@ header ul li .menu_icon{
 	width: 33px;
 }
 
+header ul li .menu_icon{
+	display: none;
+}
+
 /* Search bar */
 .search-box {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: 20%;
+	left: 5%;
 	background: #2f3640;
 	height: 50px;
 	border-radius: 15px;
@@ -188,37 +193,37 @@ header ul li .menu_icon{
 
 .icon{
 	width: 24px;
-	margin-left: 20px;
+	padding: 2px;
 }
 
 /* Footer */
 footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 	position: absolute;
 	bottom: 0px;
 	background: rgba(0,0,0,0.5);
 	align-items: center;
+	height: 50px;
 }
 
-.search-icon{
-	color: green;
-
+footer .social-links{
+	padding: 0 1rem;
 }
 
-.social-links{
-	position: absolute;
-	bottom: 8px;
-	padding: 20px 0px 0px 20px;
-	z-index: 1;
-	
+footer .social-links .icon{
+
 }
 
 /*-- 5. Footer --*/
 footer p{
 	text-align: center;
 	color: #ffffff;
-	padding: 10px;
+	padding: 0 1rem;
 	font-size: 12px;
+	margin-right: 2rem;
 }
 
 footer small{
